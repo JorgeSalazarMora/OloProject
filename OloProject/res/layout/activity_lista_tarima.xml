@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListaTarima" >
+
+    <LinearLayout
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnEditarTarima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/btnEditarTarima"
+            style="@style/btnStyleSeagull" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnEliminarTarima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:onClick="onClick"
+            android:text="@string/btnEliminarTarima"
+            style="@style/btnStyleSeagull" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de Tarimas:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ListView
+        android:layout_marginLeft="40dp"
+        android:id="@+id/lvTarima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

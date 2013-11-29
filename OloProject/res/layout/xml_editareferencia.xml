@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblRTarima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/lblNumeroTarima" />
+
+            <TextView
+                android:id="@+id/txtRTam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtUnidadesTotales"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/lblRTarimaOrigen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/lblTarimaOrigen" />
+
+            <TextView
+                android:id="@+id/txtROrigen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtUnidadesTotales"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/lblEReferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/lblReferencia" />
+
+            <EditText
+                android:id="@+id/txtEReferencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:inputType="none" 
+                android:focusable="false"/>
+
+            <TextView
+                android:id="@+id/lblEBultos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblBultos" />
+
+           <EditText
+                android:id="@+id/txtEBultos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/lblEmpaque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/lblEmpaque" />
+
+            <EditText
+                android:id="@+id/txtEEmpaque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/lblEUnidadesTotales"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/lblUnidadesTotales" />
+
+            <TextView
+                android:id="@+id/txtEUnidadesTotales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtUnidadesTotales"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/LblEPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblPeso"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:id="@+id/txtEPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/lblEPesoTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblPesoTotal"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/txtEPesoTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtPesoTotal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginLeft="10dp" />
+
+            <Button
+                android:id="@+id/btnEGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btnGuardarCambios"
+                style="@style/btnStyleSeagull" />
+
+            <Button
+                android:id="@+id/btnCancelarRef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btnCancelar"
+                style="@style/btnStyleSeagull"  />
+
+        </LinearLayout>
+
+    </ScrollView>

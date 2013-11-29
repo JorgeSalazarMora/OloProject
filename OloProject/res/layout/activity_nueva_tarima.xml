@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblRTarima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/lblNumeroTarima" />
+
+    <EditText
+        android:id="@+id/txtIdTam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:inputType="number" >
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblTarimaOrigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/lblTarimaOrigen" />
+
+    <EditText
+        android:id="@+id/txtTarimaOrigen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/lblTExpediente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblExpediente"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <EditText
+        android:id="@+id/txtTExpediente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="number" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblListaRef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblListaReferencias"
+        android:layout_marginLeft="10dp" />
+
+    <ListView
+        android:id="@+id/lvReferencias"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btnGuardarTam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnGuardarTarima"
+        style="@style/btnStyleSeagull"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

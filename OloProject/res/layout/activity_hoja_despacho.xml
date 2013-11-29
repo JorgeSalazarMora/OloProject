@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:scrollbars="vertical" 
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+        
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/lblNombre" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10" 
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/lblFicha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/lblFicha" />
+
+    <EditText
+        android:id="@+id/txtFicha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblDestino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/lblDestino" />
+
+        <Spinner
+            android:id="@+id/spnDestino"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/lblFecha" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginRight="70dp">
+
+        <!--      <TextView
+                android:id="@+id/lblDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/lblDia"/> -->
+
+            <EditText
+                android:id="@+id/txtDia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:focusable="false" />
+
+        </LinearLayout>
+
+      <!--   <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="60dp" >
+
+            <TextView
+                android:id="@+id/lblMes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblMes" />
+
+            <EditText
+                android:id="@+id/txtMes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:focusable="false"/>
+
+        </LinearLayout>--> 
+
+     <!--     <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblAnio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblAnio" />
+
+            <EditText
+                android:id="@+id/txtAnio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false" />
+
+        </LinearLayout> -->
+
+    </LinearLayout> 
+
+    <TextView
+        android:id="@+id/lblHoraInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/lblHoraInicio" />
+
+    <TimePicker
+        android:id="@+id/tpHoraInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleX="0.8"
+        android:scaleY="0.8" />
+
+    <TextView
+        android:id="@+id/lblDespacho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/lblDespacho" />
+
+    <EditText
+        android:id="@+id/txtDespacho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnNuevaTarima"
+                style="@style/btnStyleSeagull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btnNTarima" />
+
+            <Button
+                android:id="@+id/btnListaTarima"
+                style="@style/btnStyleSeagull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btnLTarima" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnGuardar"
+                style="@style/btnStyleSeagull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btnGuardar" />
+
+            <Button
+                android:id="@+id/btnRegresar"
+                style="@style/btnStyleSeagull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btnRegresar" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+                                                                        
+</LinearLayout>
+
+</ScrollView>
+   

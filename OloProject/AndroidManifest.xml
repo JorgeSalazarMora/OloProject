@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.oloproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+    
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.oloproject.HomeActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.oloproject.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.example.oloproject.HojaDespachos"
+            android:label="@string/title_activity_hoja_despacho" >
+        </activity>
+        <activity
+            android:name="com.example.oloproject.NuevaTarima"
+            android:label="@string/title_activity_nueva_tarima" >
+        </activity>
+        <activity
+            android:name="com.example.oloproject.NuevaReferencia"
+            android:label="@string/title_activity_nueva_referencia" >
+        </activity>
+        <activity
+            android:name="com.example.oloproject.EditarReferencia"
+            android:label="@string/title_activity_editar_referencia" >
+        </activity>
+        <activity
+            android:name="com.example.oloproject.EditarTarima"
+            android:label="@string/title_activity_editar_tarima" >
+        </activity>
+        <activity
+            android:name="com.example.oloproject.ListaTarima"
+            android:label="@string/title_activity_lista_tarima" >
+        </activity>
+    </application>
+
+</manifest>

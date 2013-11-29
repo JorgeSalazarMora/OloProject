@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <item 
+        android:id="@+id/menu_agregarRef" 
+        android:checkable="false" 
+        android:enabled="true" 
+        android:icon="@android:drawable/ic_menu_add" 
+        android:checked="false" 
+        android:visible="true" 
+        android:title="@string/btnAgregarReferencia"
+        android:showAsAction="ifRoom|withText">
+        
+    </item>
+
+</menu>
